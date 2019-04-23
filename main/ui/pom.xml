@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2014 Sebastian Stenzel
+  This file is licensed under the terms of the MIT license.
+  See the LICENSE.txt file for more info.
+  
+  Contributors:
+      Sebastian Stenzel - initial API and implementation
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.cryptomator</groupId>
+		<artifactId>main</artifactId>
+		<version>1.2.4</version>
+	</parent>
+	<artifactId>ui</artifactId>
+	<name>Cryptomator GUI</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.cryptomator</groupId>
+			<artifactId>commons</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.cryptomator</groupId>
+			<artifactId>filesystem-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.cryptomator</groupId>
+			<artifactId>filesystem-nio</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.cryptomator</groupId>
+			<artifactId>filesystem-nameshortening</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.cryptomator</groupId>
+			<artifactId>filesystem-crypto</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.cryptomator</groupId>
+			<artifactId>filesystem-charsets</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.cryptomator</groupId>
+			<artifactId>filesystem-stats</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.cryptomator</groupId>
+			<artifactId>frontend-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.cryptomator</groupId>
+			<artifactId>frontend-webdav</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.cryptomator</groupId>
+			<artifactId>jni</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.cryptomator</groupId>
+			<artifactId>keychain</artifactId>
+		</dependency>
+		
+		<!-- CryptoLib -->
+		<dependency>
+			<groupId>org.cryptomator</groupId>
+			<artifactId>cryptolib</artifactId>
+		</dependency>
+		
+		<!-- EasyBind -->
+		<dependency>
+			<groupId>org.fxmisc.easybind</groupId>
+			<artifactId>easybind</artifactId>
+		</dependency>	
+
+		<!-- JSON -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+	
+		<!-- Guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+		</dependency>
+
+		<!-- apache commons -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+		</dependency>
+
+		<!-- DI -->
+		<dependency>
+			<groupId>com.google.dagger</groupId>
+			<artifactId>dagger</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.google.dagger</groupId>
+			<artifactId>dagger-compiler</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		
+		<!-- Tests -->
+		<dependency>
+			<groupId>org.cryptomator</groupId>
+			<artifactId>commons-test</artifactId>
+		</dependency>
+
+		<!-- Zxcvbn -->
+		<dependency>
+			<groupId>com.nulab-inc</groupId>
+			<artifactId>zxcvbn</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+	</dependencies>
+</project>
